@@ -8,14 +8,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
-        <title>Document</title>
+        <title>Jason Moore</title>
     </head>
 
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
             <div class="container-fluid">
+                <a class="navbar-brand" href="#">Jason Moore</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="bars">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -46,12 +49,12 @@
                     <div class="col-md-6 d-flex flex-column justify-content-center">
                         <h1 class="display-1 fw-bold">&quot Solving Problems<br>with Code &quot</h1>
                         <div class="buttons mt-4">
-                            <button class="btn btn-outline-warning px-4 py-2">My Work</button>
-                            <button class="btn btn-warning text-white px-4 py-2">About</button>
+                            <button class="btn btn-outline-warning px-4 py-2">About</button>
+                            <button class="btn btn-warning text-white px-4 py-2">My Work</button>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="./assets/img/GolfCourse.jpg" class="d-block w-100" alt="..." height="600px">
+                        <img src="./assets/img/GolfCourse.jpg" class="d-block w-100 img-p" alt="..." height="600px">
                     </div>
                 </div>
             </div>
@@ -62,8 +65,8 @@
             <hr>
             <div class="container my-5 py-5">
                 <div class="row mb-5">
-                    <div class="col-md-6 ">
-                        <img src="./assets/img/self.jpeg" alt="..." height="400px" width="300px">
+                    <div class="col-md-6">
+                        <img src="./assets/img/self.jpeg" alt="..." class="img-p" height="400px" width="300px">
                     </div>
                     <div class="col-md-6">
                         <h1 class="fw-bold">JASON MOORE</h1>
@@ -74,29 +77,29 @@
             </div>
         </section>
         
-        <!-- Skills Section -->
-        <section id="skills">
+        <!-- Work Section -->
+        <section id="work">
             <div class="container my-5 py-5">
                 <hr>
                 <div class="row">
-                    <div class="col-md-4 d-flex flex-column justify-content-center">
-                        <h1 class="display-1 fw-bold">My<br>Projects</h1>
+                    <div class="col-md-4 d-flex flex-column">
+                        <h1 class="display-1 fw-bold">My<br>Work</h1>
                     </div>
                     <div class="col-md-8">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-10 ms-auto project">
-
+                                <div class="col-md-10 ms-auto mt-1">
+                                    <a href="https://jamoore4579.github.io/Run-Buddy-Repo/" target="_blank"><img src="./assets/img/dinner_spinner.JPG" class="img-fluid project" alt="Dinner Spinner"></a>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-10 ms-auto project">
-
+                                <div class="col-md-10 ms-auto mt-1">
+                                    <a href="https://jamoore4579.github.io/Run-Buddy-Repo/" target="_blank"><img src="./assets/img/02-run-buddy.jpg" class="img-fluid project" alt="Run Buddy"></a>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-10 ms-auto project">
-
+                                <div class="col-md-10 ms-auto mt-1">
+                                    <a href="https://jamoore4579.github.io/Run-Buddy-Repo/" target="_blank"><img class="img-fluid project" src="./assets/img/02-run-buddy.jpg" alt="Run Buddy"></a>
                                 </div>
                             </div>
                         </div>
@@ -105,8 +108,71 @@
             </div>
         </section>
 
+        <!-- Services Section -->
+        <section id="service">
+            <div class="container my-5 py-5">
+                <div class="row mb-1">
+                    <div class="col-12">
+                        <h1 class="fw-bold">Skills</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card p-4" style="width: 18rem;">
+                            <img src="assets/img/frontend.JPG" class="card-img-top" alt="...">
+                            <div class="card-body text center">
+                            <h3>FrontEnd Development</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4" style="width: 18rem;">
+                            <img src="assets/img/mysql.JPG" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                            <h3>MySQL Database</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4" style="width: 18rem;">
+                            <img src="assets/img/project.JPG" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                            <h3>Project Management</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section>
+            <div class="container">
+                <div class="row mb-3">
+                    <hr>
+                    <div class="col-md-4 d-flex flex-column">
+                        <h3 class="connect ms-auto">Lets<br>Connect</h3>         
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <div>
+                            <p class="contact"><ion-icon name="call-outline"></ion-icon>  260.437.4919</p>
+
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <a class="contact" href ="mailto: jasonamoore@frontier.com">jasonamoore@frontier.com</a>
+                         </div>
+                    </div>
+                         
+                    <div class="col-md-4 d-flex flex-column">
+                        <img class="contact-img" src="./assets/img/self.jpeg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="./assets/js/script.js"></script>
     </body>
 </html>
