@@ -13,3 +13,7 @@ img {
     border-radius: 10px;
 }
 
+.project {
+    height: 160px;
+    border: 1px black solid;
+}
